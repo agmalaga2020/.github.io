@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Github, Linkedin, Mail, GraduationCap, Briefcase, Building2, Code2, TrendingUp, ArrowRight, Award, Globe, Database, Brain, FileText, ExternalLink, MonitorPlay, Layout } from 'lucide-react';
 import InteractiveCharts from '../components/InteractiveCharts';
+import GitHubStats from '../components/GitHubStats';
 import { getFeaturedProjects } from '../data/projects';
 
 const Home = ({ onNavigateToProject }) => {
@@ -188,6 +189,9 @@ const Home = ({ onNavigateToProject }) => {
           </div>
         </div>
       </section>
+
+      {/* GitHub Stats Section */}
+      <GitHubStats />
 
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-800/50">
