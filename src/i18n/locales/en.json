@@ -67,6 +67,8 @@
     "yearsActive": "Years on GitHub",
     "topLanguages": "Most Used Languages",
     "projects": "projects",
-    "viewProfile": "View Full GitHub Profile"
+    "viewProfile": "View Full GitHub Profile",
+    "commitActivity": "Commit Activity (Last 12 Months)",
+    "commitNote": "Activity based on repository updates and contributions"
   }
 }
