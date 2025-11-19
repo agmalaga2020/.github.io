@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "home": {
+    "badge1": "Data Scientist (UOC)",
+    "badge2": "MBA Student",
+    "title": "Alberto Giménez Mut",
+    "subtitle": "Empowering Business Growth Through",
+    "subtitleHighlight": "Data-Driven Strategy",
+    "description": "Expert in financial modeling and strategic analysis. I combine a strong technical foundation in <strong>Data Science</strong> with the management vision of an <strong>MBA</strong> and real experience as a founder, transforming complex data into profitable business decisions.",
+    "skills": ["Python & R", "Machine Learning", "Financial Modeling", "Tableau & Power BI", "SQL", "Azure Databricks", "AWS"],
+    "impactTitle": "Impact & Track Record",
+    "impactSubtitle": "Proven results in high-level competitions and real business management.",
+    "founder": {
+      "years": "13 Years",
+      "title": "Founder @ Forrentmalaga",
+      "category": "Management & Strategy",
+      "description": "Comprehensive management of tourist real estate assets. Implementation of <strong>dynamic pricing</strong> strategies and occupancy optimization based on market analysis and financial KPIs."
+    },
+    "datathon2024": {
+      "title": "Cajamar UniversityHack 2024",
+      "category": "Biotech Challenge",
+      "description": "Development of predictive models for a biotechnology company. Optimization of vaccine antigen production through time series analysis and advanced <strong>Feature Engineering</strong>."
+    },
+    "datathon2023": {
+      "title": "Cajamar UniversityHack 2023",
+      "category": "Agro-Tech AI",
+      "description": "Wine production prediction for Cooperativa La Viña. Integration of historical climate data and ML models to optimize the <strong>supply chain</strong>."
+    },
+    "portfolioTitle": "Technical Portfolio",
+    "portfolioSubtitle": "Data engineering applied to socioeconomic problems."
+  },
+  "projects": {
+    "policyspace": {
+      "badge": "Bachelor Thesis - Grade 8.25",
+      "title": "PolicySpace2 Spain",
+      "description": "Agent-based simulation of the Spanish real estate market with cadastral integration and public policy analysis.",
+      "tags": ["Python", "ETL Pipeline"],
+      "viewDetails": "View Details"
+    },
+    "financial": {
+      "badge": "In Development",
+      "title": "Financial Analysis System",
+      "description": "Interactive dashboard for investment portfolio analysis. Uses real-time APIs to apply financial prediction models developed in Python and visualized in React.",
+      "tags": ["React", "Financial Modeling"]
+    }
+  },
+  "footer": {
+    "title": "Alberto Giménez Mut",
+    "subtitle": "Data Scientist & Business Strategist.",
+    "location": "Málaga, Spain • Open to Remote Work",
+    "rights": "All rights reserved."
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  }
+}
