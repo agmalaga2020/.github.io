@@ -62,6 +62,8 @@
   },
   "githubStats": {
     "title": "GitHub Activity",
+    "totalContributions": "Total Contributions",
+    "lastYear": "Last year",
     "publicRepos": "Public Repositories",
     "originalProjects": "Original Projects",
     "yearsActive": "Years on GitHub",
