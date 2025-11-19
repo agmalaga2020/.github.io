@@ -8,11 +8,6 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: false,
-    terserOptions: {
-      compress: {
-        drop_console: true,
-      },
-    },
   },
   server: {
     port: 3000,
