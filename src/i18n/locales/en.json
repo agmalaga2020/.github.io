@@ -59,5 +59,14 @@
   "theme": {
     "light": "Light",
     "dark": "Dark"
+  },
+  "githubStats": {
+    "title": "GitHub Activity",
+    "publicRepos": "Public Repositories",
+    "originalProjects": "Original Projects",
+    "yearsActive": "Years on GitHub",
+    "topLanguages": "Most Used Languages",
+    "projects": "projects",
+    "viewProfile": "View Full GitHub Profile"
   }
 }
