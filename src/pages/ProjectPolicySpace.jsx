@@ -190,7 +190,7 @@ const ProjectPolicySpace = ({ onBack }) => {
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
-                href="/proyecto entrega.pdf"
+                href="/proyecto%20entrega.pdf"
                 target="_blank"
                 className="px-8 py-4 bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-600 rounded-xl font-semibold hover:bg-slate-50 dark:hover:bg-slate-600 transition shadow-sm flex items-center gap-2"
               >
