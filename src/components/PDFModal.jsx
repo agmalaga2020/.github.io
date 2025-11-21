@@ -4,6 +4,19 @@ import { X } from 'lucide-react';
 const PDFModal = ({ isOpen, onClose, pdfUrl, title }) => {
   if (!isOpen) return null;
 
+  // Convert raw GitHub URL to Google Docs Viewer URL for proper rendering
+  const getViewerUrl = (url) => {
+    if (!url) return '';
+    // If it's already a Google Docs Viewer URL, use it as-is
+    if (url.includes('docs.google.com/viewer')) {
+      return url;
+    }
+    // Otherwise, wrap it with Google Docs Viewer
+    return `https://docs.google.com/viewer?url=${encodeURIComponent(url)}`;
+  };
+
+  const viewerUrl = getViewerUrl(pdfUrl);
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center animate-fade-in">
       {/* Overlay */}
@@ -31,9 +44,10 @@ const PDFModal = ({ isOpen, onClose, pdfUrl, title }) => {
         {/* PDF Viewer */}
         <div className="w-full h-[calc(100%-4rem)]">
           <iframe
-            src={pdfUrl}
+            src={viewerUrl}
             className="w-full h-full"
             title={title}
+            allow="fullscreen"
           />
         </div>
       </div>
