@@ -14,7 +14,9 @@ const { t, i18n } = useTranslation();
       {/* Hero Section */}
       <section id="home" className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-slate-50 dark:from-slate-900 dark:to-slate-800">
         <div className="max-w-7xl mx-auto">
-          <div className="max-w-4xl">
+          <div className="grid lg:grid-cols-[1fr,auto] gap-12 items-start">
+            {/* Left Column - Text Content */}
+            <div className="max-w-4xl">
             <div className="flex flex-wrap items-center gap-3 mb-8 animate-fade-in">
               <span className="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs font-bold uppercase tracking-wider rounded-full border border-blue-100 dark:border-blue-800 flex items-center gap-2">
                 <GraduationCap className="w-4 h-4" /> {t('home.badge1')}
@@ -59,6 +61,51 @@ const { t, i18n } = useTranslation();
                   {skill}
                 </span>
               ))}
+            </div>
+            </div>
+
+            {/* Right Column - Profile Photo Card */}
+            <div className="lg:sticky lg:top-32 animate-fade-in">
+              <div className="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-lg hover:shadow-xl transition-all duration-300 max-w-sm mx-auto">
+                <div className="aspect-square relative overflow-hidden">
+                  <img 
+                    src="/71594667.jpg" 
+                    alt="Alberto Giménez Mut"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
+                    Alberto Giménez Mut
+                  </h3>
+                  <p className="text-slate-600 dark:text-slate-400 text-sm mb-4">
+                    {i18n.language === 'es' 
+                      ? 'Data Scientist & Business Strategist' 
+                      : 'Data Scientist & Business Strategist'}
+                  </p>
+                  <div className="flex gap-3">
+                    <a
+                      href="https://github.com/agmalaga2020"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-600 transition text-sm font-medium"
+                    >
+                      <Github className="w-4 h-4" />
+                      GitHub
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/albertogimenezmut"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-sm font-medium"
+                    >
+                      <Linkedin className="w-4 h-4" />
+                      LinkedIn
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
