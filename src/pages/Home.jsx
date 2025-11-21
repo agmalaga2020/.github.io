@@ -148,14 +148,16 @@ const Home = ({ onNavigateToProject }) => {
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
               <div className="flex-1">
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs font-bold mb-4 border border-blue-200 dark:border-blue-800">
-                  <Award className="w-3 h-3" /> Grado en Data Science (UOC)
+                  <Award className="w-3 h-3" /> {t('home.educationSubtitle')}
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3">Educación Académica Complementaria</h3>
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3">{i18n.language === 'es' ? 'Educación Académica Complementaria' : 'Complementary Academic Education'}</h3>
                 <p className="text-slate-600 dark:text-slate-400 mb-4 max-w-2xl">
-                  Formación estructurada en 4 áreas temáticas: Fundamentos, Machine Learning, Ciencia de Datos y Profesional. 48 asignaturas completadas con promedio de 9.1 en 240 ECTS.
+                  {i18n.language === 'es'
+                    ? 'Formación estructurada en 4 áreas temáticas: Fundamentos, Machine Learning, Ciencia de Datos y Profesional. 48 asignaturas completadas con promedio de 9.1 en 240 ECTS.'
+                    : 'Structured training in 4 thematic areas: Fundamentals, Machine Learning, Data Science and Professional. 48 completed courses with an average of 9.1 in 240 ECTS.'}
                 </p>
                 <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold group-hover:translate-x-1 transition">
-                  Explorar Educación <ArrowRight className="w-4 h-4" />
+                  {i18n.language === 'es' ? 'Explorar Educación' : 'Explore Education'} <ArrowRight className="w-4 h-4" />
                 </div>
               </div>
               <div className="flex-shrink-0 w-32 h-32 bg-blue-600 dark:bg-blue-700 rounded-xl flex items-center justify-center group-hover:scale-110 transition duration-300">
@@ -252,7 +254,9 @@ const Home = ({ onNavigateToProject }) => {
             {t('nav.contact')}
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400 mb-10 max-w-2xl mx-auto">
-            Abierto a nuevas oportunidades y colaboraciones en Data Science y Business Strategy.
+            {i18n.language === 'es'
+              ? 'Abierto a nuevas oportunidades y colaboraciones en Data Science y Business Strategy.'
+              : 'Open to new opportunities and collaborations in Data Science and Business Strategy.'}
           </p>
           <div className="flex justify-center gap-6">
             <a
