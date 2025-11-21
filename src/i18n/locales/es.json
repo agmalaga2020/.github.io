@@ -32,6 +32,8 @@
       "category": "Agro-Tech AI",
       "description": "Predicción de producción vitivinícola para la Cooperativa La Viña. Integración de datos climáticos históricos y modelos de ML para optimizar la <strong>cadena de suministro</strong>."
     },
+    "educationTitle": "Educación & Formación",
+    "educationSubtitle": "Grado en Ciencia de Datos Aplicada - UOC",
     "portfolioTitle": "Portfolio Técnico",
     "portfolioSubtitle": "Ingeniería de datos aplicada a problemas socioeconómicos."
   },

@@ -32,6 +32,8 @@
       "category": "Agro-Tech AI",
       "description": "Wine production prediction for Cooperativa La Viña. Integration of historical climate data and ML models to optimize the <strong>supply chain</strong>."
     },
+    "educationTitle": "Education & Training",
+    "educationSubtitle": "Bachelor Degree in Applied Data Science - UOC",
     "portfolioTitle": "Technical Portfolio",
     "portfolioSubtitle": "Data engineering applied to socioeconomic problems."
   },
