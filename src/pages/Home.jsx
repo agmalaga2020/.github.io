@@ -114,6 +114,44 @@ const Home = ({ onNavigateToProject }) => {
         </div>
       </section>
 
+      {/* Education Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 border-t border-slate-100 dark:border-slate-800">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex justify-between items-end mb-12">
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-3">
+                <GraduationCap className="w-8 h-8 text-blue-600 dark:text-blue-400" />
+                {t('home.educationTitle') || 'Educación & Formación'}
+              </h2>
+              <p className="text-slate-500 dark:text-slate-400">{t('home.educationSubtitle') || 'Grado en Ciencia de Datos Aplicada - UOC'}</p>
+            </div>
+          </div>
+
+          <div
+            onClick={() => onNavigateToProject('education')}
+            className="group cursor-pointer bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-slate-800 dark:to-slate-700 rounded-2xl overflow-hidden border border-blue-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-600 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 p-8"
+          >
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+              <div className="flex-1">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs font-bold mb-4 border border-blue-200 dark:border-blue-800">
+                  <Award className="w-3 h-3" /> Grado en Data Science (UOC)
+                </div>
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3">Educación Académica Complementaria</h3>
+                <p className="text-slate-600 dark:text-slate-400 mb-4 max-w-2xl">
+                  Formación estructurada en 4 áreas temáticas: Fundamentos, Machine Learning, Ciencia de Datos y Profesional. 48 asignaturas completadas con promedio de 9.1 en 240 ECTS.
+                </p>
+                <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold group-hover:translate-x-1 transition">
+                  Explorar Educación <ArrowRight className="w-4 h-4" />
+                </div>
+              </div>
+              <div className="flex-shrink-0 w-32 h-32 bg-blue-600 dark:bg-blue-700 rounded-xl flex items-center justify-center group-hover:scale-110 transition duration-300">
+                <GraduationCap className="w-16 h-16 text-white opacity-80" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Projects Section */}
       <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 border-t border-slate-100 dark:border-slate-800">
         <div className="max-w-7xl mx-auto">

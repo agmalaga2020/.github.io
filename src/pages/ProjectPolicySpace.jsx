@@ -158,7 +158,7 @@ const ProjectPolicySpace = ({ onBack }) => {
           <div className="max-w-5xl mx-auto text-center relative z-10">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-sm font-semibold mb-8 border border-blue-200 dark:border-blue-800">
               <Zap className="w-4 h-4" />
-              {i18n.language === 'es' ? 'TFG - Grado en Data Science (UOC) - Calificación: 8.25' : 'Bachelor Thesis - Data Science Degree (UOC) - Grade: 8.25'}
+              {i18n.language === 'es' ? 'TFG - Grado en Data Science (UOC) - Calificación: 9.1' : 'Bachelor Thesis - Data Science Degree (UOC) - Grade: 9.1'}
             </div>
 
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight">
@@ -517,8 +517,8 @@ const ProjectPolicySpace = ({ onBack }) => {
       <footer className="bg-slate-50 dark:bg-slate-900 text-slate-500 dark:text-slate-400 py-12 text-center border-t border-slate-200 dark:border-slate-800">
         <p className="text-sm mb-2 font-medium">
           {i18n.language === 'es'
-            ? 'Trabajo Final de Grado - Data Science (UOC) - Calificación: 8.25'
-            : 'Bachelor Thesis - Data Science (UOC) - Grade: 8.25'}
+            ? 'Trabajo Final de Grado - Data Science (UOC) - Calificación: 9.1'
+            : 'Bachelor Thesis - Data Science (UOC) - Grade: 9.1'}
         </p>
         <p className="text-xs">
           {i18n.language === 'es'

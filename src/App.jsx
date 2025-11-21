@@ -3,6 +3,7 @@ import { ThemeProvider } from './contexts/ThemeContext';
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import ProjectPolicySpace from './pages/ProjectPolicySpace';
+import Education from './pages/Education';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
@@ -14,6 +15,8 @@ function App() {
     switch (currentView) {
       case 'policyspace':
         return <ProjectPolicySpace onBack={() => setCurrentView('home')} />;
+      case 'education':
+        return <Education onBack={() => setCurrentView('home')} />;
       case 'home':
       default:
         return <Home onNavigateToProject={setCurrentView} />;
