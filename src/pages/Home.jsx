@@ -6,7 +6,7 @@ import SplitTextAnimation from '../components/SplitTextAnimation';
 import { getFeaturedProjects } from '../data/projects';
 
 const Home = ({ onNavigateToProject }) => {
-  const { t } = useTranslation();
+const { t, i18n } = useTranslation();
   const featuredProjects = getFeaturedProjects();
 
   return (
