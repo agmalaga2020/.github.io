@@ -146,7 +146,7 @@ const InteractiveCharts = () => {
           { label: 'Years Experience', value: '13+', icon: Award },
           { label: 'Projects', value: '20+', icon: Database },
           { label: 'Technologies', value: '15+', icon: Brain },
-          { label: 'Grade Average', value: '8.25', icon: TrendingUp },
+          { label: 'Grade Average', value: '9.1', icon: TrendingUp },
         ].map((stat, idx) => (
           <div
             key={idx}
