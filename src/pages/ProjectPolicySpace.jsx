@@ -531,7 +531,7 @@ const ProjectPolicySpace = ({ onBack }) => {
       <PDFModal
         isOpen={isPDFModalOpen}
         onClose={() => setIsPDFModalOpen(false)}
-        pdfUrl="/policyspace2_v1.pdf"
+        pdfUrl="/policyspace2_spain.pdf"
         title={i18n.language === 'es' ? 'PolicySpace2 - Paper Completo' : 'PolicySpace2 - Full Paper'}
       />
     </div>
