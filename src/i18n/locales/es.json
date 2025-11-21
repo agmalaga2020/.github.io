@@ -37,7 +37,7 @@
   },
   "projects": {
     "policyspace": {
-      "badge": "TFG - Grado 8.25",
+      "badge": "TFG - Grado 9.1",
       "title": "PolicySpace2 Spain",
       "description": "Simulación basada en agentes del mercado inmobiliario español con integración catastral y análisis de políticas públicas.",
       "tags": ["Python", "ETL Pipeline"],

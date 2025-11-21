@@ -37,7 +37,7 @@
   },
   "projects": {
     "policyspace": {
-      "badge": "Bachelor Thesis - Grade 8.25",
+      "badge": "Bachelor Thesis - Grade 9.1",
       "title": "PolicySpace2 Spain",
       "description": "Agent-based simulation of the Spanish real estate market with cadastral integration and public policy analysis.",
       "tags": ["Python", "ETL Pipeline"],
