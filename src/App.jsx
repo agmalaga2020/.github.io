@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ThemeProvider } from './contexts/ThemeContext';
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
@@ -10,6 +10,10 @@ import { useTranslation } from 'react-i18next';
 function App() {
   const [currentView, setCurrentView] = useState('home');
   const { t } = useTranslation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentView]);
 
   const renderView = () => {
     switch (currentView) {
