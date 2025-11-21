@@ -150,7 +150,7 @@ const Education = ({ onBack }) => {
       sublabel: i18n.language === 'es' ? 'Completadas' : 'Completed'
     },
     {
-      metric: '9.1',
+      metric: '8.25',
       label: i18n.language === 'es' ? 'Promedio' : 'GPA',
       sublabel: i18n.language === 'es' ? 'Grado en DS' : 'Data Science Degree'
     },
@@ -426,8 +426,8 @@ const Education = ({ onBack }) => {
                 </h3>
                 <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
                   {i18n.language === 'es'
-                    ? 'Promedio de 9.1 en todas las asignaturas. Reconocimiento académico de rigor y dedicación.'
-                    : 'Average of 9.1 in all subjects. Academic recognition of rigor and dedication.'}
+                    ? 'Promedio de 8.25 en todas las asignaturas. Reconocimiento académico de rigor y dedicación.'
+                    : 'Average of 8.25 in all subjects. Academic recognition of rigor and dedication.'}
                 </p>
               </div>
 
