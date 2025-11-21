@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Github, Linkedin, Mail, GraduationCap, Briefcase, Building2, Code2, TrendingUp, ArrowRight, Award, Globe, Database, Brain, FileText, ExternalLink, MonitorPlay, Layout } from 'lucide-react';
 import InteractiveCharts from '../components/InteractiveCharts';
 import GitHubStats from '../components/GitHubStats';
+import SplitTextAnimation from '../components/SplitTextAnimation';
 import { getFeaturedProjects } from '../data/projects';
 
 const Home = ({ onNavigateToProject }) => {
@@ -23,13 +24,26 @@ const Home = ({ onNavigateToProject }) => {
               </span>
             </div>
 
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 dark:text-white mb-8 leading-tight animate-slide-up">
-              {t('home.title')}
-            </h1>
+            <SplitTextAnimation
+              text={t('home.title')}
+              className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 dark:text-white mb-8 leading-tight"
+              delay={0}
+              staggerDelay={0.04}
+              duration={0.5}
+            />
 
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl text-slate-700 dark:text-slate-300 font-medium mb-8 leading-snug animate-slide-up">
-              {t('home.subtitle')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 font-bold">{t('home.subtitleHighlight')}</span>.
-            </h2>
+            <div className="flex flex-wrap items-center gap-2 mb-8">
+              <SplitTextAnimation
+                text={t('home.subtitle')}
+                className="text-2xl sm:text-3xl lg:text-4xl text-slate-700 dark:text-slate-300 font-medium leading-snug inline"
+                delay={0.3}
+                staggerDelay={0.03}
+                duration={0.5}
+              />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 font-bold text-2xl sm:text-3xl lg:text-4xl">
+                {t('home.subtitleHighlight')}.
+              </span>
+            </div>
 
             <p
               className="text-lg text-slate-600 dark:text-slate-400 mb-10 leading-relaxed max-w-2xl animate-fade-in"
