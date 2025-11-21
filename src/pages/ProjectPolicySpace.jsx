@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
   ChevronLeft,
@@ -22,9 +23,11 @@ import {
   Zap,
   Target
 } from 'lucide-react';
+import PDFModal from '../components/PDFModal';
 
 const ProjectPolicySpace = ({ onBack }) => {
   const { t, i18n } = useTranslation();
+  const [isPDFModalOpen, setIsPDFModalOpen] = useState(false);
 
   const etlProcesses = [
     {
@@ -189,14 +192,13 @@ const ProjectPolicySpace = ({ onBack }) => {
                 {i18n.language === 'es' ? 'Explorar Datos' : 'Explore Data'}
                 <ArrowRight className="w-4 h-4" />
               </a>
-              <a
-                href="/proyecto%20entrega.pdf"
-                target="_blank"
+              <button
+                onClick={() => setIsPDFModalOpen(true)}
                 className="px-8 py-4 bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-600 rounded-xl font-semibold hover:bg-slate-50 dark:hover:bg-slate-600 transition shadow-sm flex items-center gap-2"
               >
                 <FileText className="w-5 h-5" />
                 {i18n.language === 'es' ? 'Leer Paper' : 'Read Paper'}
-              </a>
+              </button>
             </div>
           </div>
         </section>
@@ -524,6 +526,14 @@ const ProjectPolicySpace = ({ onBack }) => {
             : 'Part of Alberto Giménez Mut\'s Portfolio.'}
         </p>
       </footer>
+
+      {/* PDF Modal */}
+      <PDFModal
+        isOpen={isPDFModalOpen}
+        onClose={() => setIsPDFModalOpen(false)}
+        pdfUrl="/proyecto%20entrega.pdf"
+        title={i18n.language === 'es' ? 'PolicySpace2 - Paper Completo' : 'PolicySpace2 - Full Paper'}
+      />
     </div>
   );
 };
